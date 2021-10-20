@@ -1,24 +1,35 @@
-# README
+# DOCPOST API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Versão de Ruby e Rails
 
-Things you may want to cover:
+- Ruby 3.0.1
+- Rails 6.1.4
 
-* Ruby version
+## Instruções para acessar a aplicação°
 
-* System dependencies
+Como foi configurado um subdominio 'api' nesta aplicação o método de acesso por 'api.mobile2you'
+e preferencial.
 
-* Configuration
+Siga as instruções abaixo para configurar o address
 
-* Database creation
+### Config Windows
+    Abra o bloco de notas no modo ADMINISTRADOR
 
-* Database initialization
+    Vá em abrir e acesse a seguint rota: 'C:\Windows\System32\drivers\etc\' e selecione o arquivo 'hosts'
 
-* How to run the test suite
+    na última linha do arquivo cole o código entre aspas abaixo:
 
-* Services (job queues, cache servers, search engines, etc.)
+    "#setup subdomain for rails applications"
 
-* Deployment instructions
+    "127.0.0.1 api.mobile2you"
 
-* ...
+### Config Linux
+    O processo e o mesmo! Acesse 'etc/host' na raiz do linux e cole os código entre aspas:
+
+    "#setup subdomain for rails applications"
+
+    "127.0.0.1 api.mobile2you"
+
+Após ter feito os passos levante o servidor normalmente
+
+e acesse a aplicação por _http://api.mobile2you:3000_ 
